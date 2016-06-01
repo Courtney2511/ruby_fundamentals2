@@ -1,4 +1,4 @@
-grocery_list = ["eggplant", "spinach", "feta cheese", "tomatoes"]
+grocery_list = ["eggplant", "spinach", "feta cheese", "tomatoes", "salmon"]
 
 grocery_list << "rice"
 
@@ -17,3 +17,11 @@ if grocery_list.include?("bananas")
 else
   puts "You don't need to pick up bananas today."
 end
+
+puts grocery_list[1]
+
+display_list(grocery_list.sort!)
+
+grocery_list.delete("salmon")
+
+display_list(grocery_list)
