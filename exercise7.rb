@@ -21,3 +21,7 @@ students.each do |cohort, size|
 end
 
 cohort_display(students)
+
+students.delete(:cohort2)
+
+cohort_display(students)
